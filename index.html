@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS CSS -->
+    <link rel="stylesheet" href="./css/fonts.css">
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- GENERAL CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>5 - OY IMTIHON</title>
+</head>
+
+<body>
+    <class class="container">
+        <header>
+            <div class="logo"><img src="./images/Logo.svg" alt="logo img"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог <img src="./images/Frame.png" alt="frame icon" width="14" height="14"></a>
+                    </li>
+                    <li><a href="#">Оптовая продажа</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <img src="./images/phone.svg" alt="phone img">
+                <a href="tel:+79665588499">+7 (966) 55 88 499</a>
+                <div class="cart-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </header>
+        <div class="nav-one">
+            <h3>Главная</h3>
+            <p>/ Каталог</p>
+        </div>
+        <main>
+            <div class="nav-item">
+                <h1>Накладные электронные замки</h1>
+                <p>(854)</p>
+            </div>
+            <div class="filters">
+                <button class="reset-filters">
+                    <p>Сбросить фильтры</p>
+                </button>
+                <button class="dollor-filter">
+                    <p>Электронные кодовые замки</p>
+                    <i class="fa-solid fa-x"></i>
+                </button>
+                <div class="filter-child">
+                    <select id="Popularity">
+                        <option value="">Популярности</option>
+                        <option value="best">Популярности1</option>
+                        <option value="average">Популярности2</option>
+                        <option value="short">Популярности3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="filtr">
+                    <button><h3>Фильтр</h3>
+                    </button>
+                    <div class="filtr-bo'lim">
+                        <div class="filtr-sarlavha">
+                            <span>Цена</span>
+                            <button class="ochish-tugmasi"><i class="fa-solid fa-chevron-up"></i></button>
+                        </div>
+                        <div class="filtr-mazmun">
+                            <input type="number" class="narx-kiritish" placeholder="79 000">
+                            <input type="number" class="narx-kiritish" placeholder="24 500Р">
+                        </div>
+                    </div>
+                    <div class="filtr-bolim">
+                        <div class="filtr-sarlavha">
+                            <span>Особенности</span>
+                            <button class="ochish-tugmasi"><i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="filtr-bo'lim">
+                        <div class="filtr-sarlavha">
+                            <span>Цвет</span>
+                            <button class="ochish-tugmasi"><i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="filtr-bo'lim">
+                        <div class="filtr-sarlavha">
+                            <span>Материал</span>
+                            <button class="ochish-tugmasi"><i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="filtr-bo'lim">
+                        <div class="filtr-sarlavha">
+                            <span>Размеры</span>
+                            <button class="ochish-tugmasi"><i class="fa-solid fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="jwt container" id="wrapper">
+                    
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="pagination-button"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="pagination-button">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button">4</button>
+                <button class="pagination-button">5</button>
+                <button class="pagination-button">6</button>
+                <button class="pagination-button">7</button>
+                <span class="pagination-ellipsis">...</span>
+                <button class="pagination-button">15</button>
+                <button class="pagination-button"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="admin">
+                <div class="admin-header">
+                    <h2>Вы недавно просмотрели</h2>
+                    <img src="./images/arrows.png" alt="arrow" width="120" height="40">
+                </div>
+                <div class="student">
+                    <div class="card">
+                        <div class="card__head">
+                            <div class="isExist">
+                                <h3>В наличии</h3>
+                            </div>
+                            <div class="sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="part__img">
+                            <img src="./images/Rectangleone.png" alt="" />
+                        </div>
+                        <div class="part__info-card">
+                            <div class="card__info__head">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <div class="coments"><span>(12) отзывов</span></div>
+                                </div>
+                                <p>Вариативный замок Golden Soft для отеля</p>
+                                <br />
+                                <div class="price">
+                                    <h3 class="new_price">7 000₽</h3>
+                                    <h3 class="old_price">8 000₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__head">
+                            <div class="isExist">
+                                <h3>В наличии</h3>
+                            </div>
+                            <div class="sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="part__img">
+                            <img src="./images/Rectangletue.png" alt="" />
+                        </div>
+                        <div class="part__info-card">
+                            <div class="card__info__head">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <div class="coments"><span>(12) отзывов</span></div>
+                                </div>
+                                <p>Вариативный замок Golden Soft для отеля</p>
+                                <br />
+                                <div class="price">
+                                    <h3 class="new_price">7 000₽</h3>
+                                    <h3 class="old_price">8 000₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__head">
+                            <div class="isExist">
+                                <h3>В наличии</h3>
+                            </div>
+                            <div class="sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="part__img">
+                            <img src="./images/Rectangleone.png" alt="" />
+                        </div>
+                        <div class="part__info-card">
+                            <div class="card__info__head">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <div class="coments"><span>(12) отзывов</span></div>
+                                </div>
+                                <p>Вариативный замок Golden Soft для отеля</p>
+                                <br />
+                                <div class="price">
+                                    <h3 class="new_price">7 000₽</h3>
+                                    <h3 class="old_price">8 000₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__head">
+                            <div class="isExist">
+                                <h3>В наличии</h3>
+                            </div>
+                            <div class="sale">
+                                <span>SALE</span>
+                            </div>
+                        </div>
+                        <div class="part__img">
+                            <img src="./images/Rectangleone.png" alt="" />
+                        </div>
+                        <div class="part__info-card">
+                            <div class="card__info__head">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <i class="fa-regular fa-star" style="color: #8c8b87"></i>
+                                    <div class="coments"><span>(12) отзывов</span></div>
+                                </div>
+                                <p>Вариативный замок Golden Soft для отеля</p>
+                                <br />
+                                <div class="price">
+                                    <h3 class="new_price">7 000₽</h3>
+                                    <h3 class="old_price">8 000₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-gift" style="color: #4295e4"></i>Подарок
+                        </div>
+                    </div>
+        </div>
+            </div>
+        </div>
+
+
+
+        <!-- 3 - qismi  -->
+
+
+
+ <div class="counter">
+        <div class="section" id="apple">
+            <h2>Eget quis quam metus, scelerisque.</h2>
+            <p>Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+            <div class="options">
+                <i class="fas fa-check-square"></i> <label for="interior">Interior Door</label>
+                <i class="fas fa-check-square"></i> <label for="exterior">Exterior Door</label>
+                <i class="fas fa-check-square"></i> <label for="wooden">Wooden Door</label>
+            </div>
+            <p>Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo. Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+        </div>
+        <div class="section" id="banana">
+            <img src="./images/footerphone.png" alt="Lock Image">
+        </div>
+        <div class="section" id="cherry">
+            <h2>Eget quis quam metus, scelerisque.</h2>
+            <p>Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+            <p>Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo. Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+        </div>
+        <div class="section" id="date">
+            <img src="./images/footerairpots.png" alt="Sensor Image">
+        </div>
+    </div>
+
+
+    <!--  footer qismi  -->
+
+
+    <div class="container">
+        <div class="footer-card" id="qo'ng'iroq">
+            <h2>Мы Вам перезвоним</h2>
+            <p>Если у вас возникли какие-то вопросы или проблемы, заполните форму и мы Вам перезвоним.</p>
+            <form>
+                <input type="text" placeholder="Ваше имя" id="name">
+                <input type="email" placeholder="Ваш Email" id="email">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-card" id="logo">
+                <img src="./images/Logo.svg" alt="Logo" class="logo" width="105" height="88">
+            </div>
+            <div class="footer-card" id="navigatsiya">
+                <h3>Навигация</h3>
+                <ul>
+                    <li>Главная</li>
+                    <li>Каталог</li>
+                    <li>Оптовая продажа</li>
+                    <li>О нас</li>
+                </ul>
+            </div>
+            <div class="footer-card" id="kontaktlar">
+                <h3>Наши контакты
+                </h3>
+                <p>Телефоны</p>
+                <p>+375 33 662 82 56</p>
+                <p>+375 33 662 82 56</p>
+                <p>Email: vladpercev@mail.ru</p>
+                <p>Email: korobko416@gmail.com</p>
+            </div>
+            <div class="footer-card" id="manzil">
+                <h3>Наш адрес</h3>
+                <p>Россия, Ростов-на-Дону ул. Богачева, 16</p>
+            </div>
+            <div class="footer-card" id="malumot">
+                <h3>информация</h3>
+                <ul>
+                    <li>Доставка и оплата</li>
+                    <li>Гарантии</li>
+                    <li>Возврат товара</li>
+                </ul>
+            </div>
+            <div class="footer-card" id="ijtimoiy">
+                <div class="social-media">
+                    <i class="fab fa-vk"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+        </footer>
+        <div class="hr"><hr></div>
+        <div class="footer-text"><p>© 2021 Golden Soft All rights reserved.</p></div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,796 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* .container {
+    height: 126px;
+    width: 1440px;
+} */
+
+header {
+    width: 1440px;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s;
+}
+nav ul li a:hover {
+    transform: scale(1.1); 
+    color: white;
+    font-weight: 400px;
+    background-color: rgb(121, 113, 113);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    /* line-height: 300; */
+}
+nav ul li a img {
+    padding-top: 3px;
+}
+.contact-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.contact-info a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+.contact-info img {
+    margin-top: 30px;
+    width: 20px;
+    height: 20px;
+    /* background-color: #888; */
+
+}
+.cart-icon {
+    padding-right: 60px;
+    padding-top: 24px;
+    /* background-color: ; */
+    display: flex;
+    /* display: flow-root; */
+    font-size: 20px;
+    /* padding-left: 30px; */
+    gap: 24px;
+    transition: all 0.5s;
+}
+.cart-icon i:hover {
+    color: red;
+}
+.cart-icon:nth-last-child(1) {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cart-icon:nth-child(2) {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.nav-one {
+    margin-left: 115px;
+    padding-top: 24px;
+}
+.nav-one {
+    display: flex;
+    gap: 4px;
+}
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+.filtr {
+    /* transition: all 0.5s; */
+    background-color: white;
+    text-align: center;
+}
+#wrapper{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+}
+.filtr button {
+    transition: all 0.5s;   
+}
+.filtr button:hover {
+    transform: scale(1.1);
+}
+.filtr button h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    color: #363d45;
+    /* background-color: white; */
+    border: rgb(85, 85, 224);
+}
+.filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+.nav-item {
+    display: flex;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.nav-item h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+    width: 456px;
+    color: #000000;
+    margin-left: 100px;
+   
+}
+.nav-item p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    width: 48px;
+    color: #000000;
+    padding-top: 10px;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filters .reset-filters {
+    border: 1px solid #ADD7FF;
+    width: 288px;
+    height: 40px;
+    background-color: transparent;
+}
+.filters .reset-filters p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #161C24;
+    /* padding: 7px 72px; */
+}
+.hello-filter {
+    width: 224px;
+    height: 24px;
+    background-color: white;
+    border: none;
+    display: flex;
+    gap: 3px;
+    /* margin-left: -465px; */
+}
+.active-filter p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 202px;
+}
+.active-filter i {
+    width: 14px;
+    height: 14px;
+    padding-top: 5px;
+    color: red;
+    cursor: pointer;
+}
+.filter-child {
+    margin-right: 60px;
+    /* margin-left: 230px; */
+}
+.filter-child select {
+    margin-right: 60px;
+    background-color: transparent;
+    width: 194px;
+    height: 40px;
+    display: flex;
+    gap: 48px;
+    border: 1px solid #C4CDD5;
+}
+.filter-child button p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #161C24;
+    padding-top: 7px;
+    padding-left: 16px;
+}
+.filter-child button i {
+    width: 16px;
+    height: 16px;
+    padding-top: 12px;
+}
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* margin-right: 20px; */
+    border: 1px solid #ccc;
+}
+
+.filter-item {
+    width: 288px;
+    border: 1px solid #C4CDD5;
+    margin-bottom: 20px;
+    /* height: ; */
+}
+.filter-item button {
+    /* padding-left: 20px; */
+    margin-left: 20px;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(211, 214, 97);
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 16px;
+}
+.filter-item button:hover {
+    transform: scale(1.1);
+}
+.filter-item button p {
+   padding-left: 30px;
+}
+.filters-item button {
+    padding-top: 10px;
+    display: flex;
+    gap: 110px;
+    background-color: transparent;
+    width: 287px;
+    box-shadow: 0px -1px 0px 0px #EDEDED inset;
+    box-shadow: 0px 1px 0px 0px #EDEDED inset;
+    border-left: none;
+    border-right: none;
+}
+.filters-item h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    width: 149px;
+    margin: 0 0 10px 0;
+}
+.dollor-filter {
+    padding-right: 500px;
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+}
+.dollor-filter p {
+    color: #161C24;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.dollor-filter i {
+    padding-top: 5px;
+    width: 10px;
+    height: 10px;
+    color: red;
+}
+.filter-input {
+    width: 240px;
+    height: 24px;
+    display: flex;
+    gap: 10px;
+}
+.filter-item .filter-text {
+    padding-top: 10px;
+    display: flex;
+    gap: 8px;
+    width: 240px;
+    height: 44px;
+    padding-left: 23px;
+
+}
+.filter-item .filter-text input {
+    width: 116px;
+    height: 44px;
+}
+ .filter-text .text-button p {
+    margin-top: -100px;
+    background-color: black;
+}
+.product-list {
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+}
+.filter-section {
+    width: 288px;
+    height: 460px;
+}
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.product .badge.sale {
+    top: 40px;
+}
+
+.product .price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product .old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+.filter-item * {
+    display: flex;
+    gap: 73px;
+}
+
+
+/* ====================== left card ===================== */
+
+/* styles.css */
+
+.filtr {
+    width: 288px;
+    height: 460px;
+    border: 1px solid #ccc;
+    padding: 20px;
+   
+}
+
+.filtr h2 {
+    margin-bottom: 20px;
+}
+
+.filtr-bolim {
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.filtr-sarlavha {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.filtr-sarlavha span {
+    font-weight: bold;
+}
+
+.ochish-tugmasi {
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+
+.filtr-mazmun {
+    display: flex;
+    gap: 10px;
+}
+
+.narx-kiritish {
+    width: calc(50% - 5px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filtr-sarlavha button i{
+    width: 14px;
+    height: 14px;
+    /* border: 1.5px solid #4295E4; */
+    color: #4295E4; 
+}
+
+
+/* ====================  cardni ichi ===================*/
+
+
+
+.card{
+    width: 288px;
+    height: 453px;
+    /* border:1px solid #232323; */
+    margin-bottom: 40px;
+    /* padding: 12px; */
+    background-color: #F7F7F7;
+    position: relative;
+    cursor: pointer;
+    }
+    .card__head{
+      top: 12px;
+      left: 12px;
+      
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+      position: absolute;
+    }
+    .isExist{
+    width: 99px;
+    height: 24px;
+    margin-left: 12px;
+    }
+    .sale{
+      width: 51px;
+      height: 30px;
+      padding: 8px 10px 8px 10px;
+      opacity: 0px;
+      font-size: 12px;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px 0px #00000008;
+    }
+    .part__img{
+    height: 320px;
+    width: 288px;
+    margin: auto;
+    }
+    .part__img img {
+        height: 320px;
+    width: 288px;
+    }
+    .part__info-card{
+      padding-top: 5px;
+      background-color: #fff;
+     /* margin-top: 20px; */
+    width: 288px;
+    height: 133px;
+    border:1px solid #EAEAEA;
+    border-top: transparent;
+    }
+    .stars{
+    padding-left: 12px;
+    display: flex;
+    gap: 5px;
+    }
+    .stars i {
+    font-style: 13.3px;
+    }
+    .part__info-card p {
+    width: 264px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 12px;
+    margin-top: 6px;
+    color:#454F5B;
+    }
+    .price{
+    /* width: 157px; */
+    height: 24px;
+    /* border:1px solid #323232; */
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 15px;
+    }
+    .new_price{
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 23.87px;
+      color:#161C24;
+    }
+    .old_price{
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 21.48px;
+      text-decoration: line-through;
+      color:#454F5B;
+    }
+    .box{
+    width: 90px;
+    height: 30px;
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.32px;
+    position: absolute;
+    top: 46px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    }
+
+    .jwt-one {
+        /* background-color: #161C24; */
+        display: flex;
+        gap: 30px;
+    }
+
+    /* ============== raqamlar  ====================== */
+
+
+
+    .pagination {
+        margin-left: 635px;
+        width: 546px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        /* border: 1px solid #007bff; */
+        border-radius: 4px;
+        padding: 5px;
+    }
+    
+    .pagination-button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: none;
+        padding: 10px 15px;
+        margin: 0 2px;
+        cursor: pointer;
+        color: #007bff;
+        transition: all 0.5s;
+    }
+    .pagination-button:hover {
+        background-color: #007bff;
+        color: white;
+        transform: scale(1.1);
+        border: none;
+        border-radius: 5px;
+
+    }
+    .pagination-button:disabled {
+        color: #ccc;
+        cursor: not-allowed;
+    }
+    
+    .pagination-ellipsis {
+        padding: 10px 15px;
+        color: #007bff;
+    }
+
+    /* =============== admin panel ================ */
+
+
+.admin-header {
+    padding-top: 100px;
+    padding-left: 99px;
+    display: flex;
+    height: 62px;
+    top: 2460px;
+    left: 99px;
+    gap: 40px;
+    width: 1234px;
+
+}
+.admin-header h2 {
+    width: 1074px;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 62px;
+    text-align: left;
+    color: #161C24;
+}
+.admin-header img {
+    width: 120px;
+    height: 40px;
+}
+/* =============== student wrapper =============== */
+
+
+.student {
+    height: 552px;
+    width: 1242px;
+    margin-top: 94px;
+    display: flex;
+    gap: 30px;
+}
+
+.admin {
+    margin-left: 170px;
+}
+.admin .admin-header h2 {
+    margin-left: -100px;
+}
+
+
+/* 3 - qismi  */
+
+
+.counter {
+    width: 1240px;
+    height: 1210px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    flex: 1 1 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#banana, #date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banana img, #date img {
+    max-width: 100%;
+    height: auto;
+}
+
+.options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.options i {
+    color: #007bff;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+
+
+/* ================= footer qismi =================== */
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.footer-card {
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-card {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-media i {
+    font-size: 24px;
+    color: white;
+}
+.footer-text {
+    background-color: #2c3e50;
+
+}
+.footer-text p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.71px;
+    text-align: center;
+}
+.hr {
+    text-align: center;
+    border: 1px solid #251442;
+}

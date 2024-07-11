@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* .container {
+    height: 126px;
+    width: 1440px;
+} */
+
+header {
+    width: 1440px;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s;
+}
+nav ul li a:hover {
+    transform: scale(1.1); 
+    color: white;
+    font-weight: 400px;
+    background-color: rgb(121, 113, 113);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    /* line-height: 300; */
+}
+nav ul li a img {
+    padding-top: 3px;
+}
+.contact-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.contact-info a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+.contact-info img {
+    margin-top: 30px;
+    width: 20px;
+    height: 20px;
+    /* background-color: #888; */
+
+}
+.cart-icon {
+    padding-right: 60px;
+    padding-top: 24px;
+    /* background-color: ; */
+    display: flex;
+    /* display: flow-root; */
+    font-size: 20px;
+    /* padding-left: 30px; */
+    gap: 24px;
+    transition: all 0.5s;
+}
+.cart-icon i:hover {
+    color: red;
+}
+.cart-icon:nth-last-child(1) {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cart-icon:nth-child(2) {
+    transition: all 0.5s;
+    cursor: pointer;
+}
