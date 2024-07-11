@@ -1,22 +1,45 @@
-import { getData,createCard } from "./function.js";
+import { getData, createCard,createDetailCard } from './function.js';
 
-const wrapper = document.getElementById("wrapper")
-// console.log(wrapper);
 
-document.addEventListener('DOMContentLoaded',function(){
-
-// const category = document.querySelector('select');
-getData("https://cars-pagination.onrender.com/products")
-.then((data) =>{
-data.forEach(el => {
-  if(el.id > 10 && el.id < 23){
-  let card = createCard(el);
-  console.log(card);
-  wrapper.innerHTML += card
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  const wrapper = document.getElementById("wrapper");
+const select = document.querySelector("#Popularity")
+    getData("https://cars-pagination.onrender.com/products")
+        .then((data) => {
+            data.forEach(el => {
+                if (el.id > 10 && el.id < 23) {
+                    let card = createCard(el);
+                    wrapper.innerHTML += card;
+                }
+                
+            });
+            select.addEventListener('change',function(){
+            wrapper.innerHTML = ''
+            data.forEach(el => {
+              if(this.value === el.category){
+              let card = createCard(el);
+              wrapper.innerHTML += card;
+              }
+            });
+            })
+            const cards = this.querySelectorAll(".card")
+            console.log(cards);
+            cards.length > 0 && cards.forEach(el => {
+              console.log(el);
+              el.addEventListener('click',function(event){
+              const id = this.getAttribute("data-id");
+              // console.log(id);
+              if (id) {
+                window.location.assign(`http://127.0.0.1:5501/main.html?id=${id}`);
+              }
+              })
+            });
+        })
+        .catch((error) => {
+            console.error(error);
+        });
 });
-})
-.catch((error) => {
-  return error;
-})
-})
+
+
+
+
