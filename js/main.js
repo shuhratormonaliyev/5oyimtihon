@@ -19,6 +19,18 @@ const select = document.querySelector("#Popularity")
               if(this.value === el.category){
               let card = createCard(el);
               wrapper.innerHTML += card;
+              const cards = this.querySelectorAll(".card")
+            console.log(cards);
+            cards.length > 0 && cards.forEach(el => {
+              console.log(el);
+              el.addEventListener('click',function(event){
+              const id = this.getAttribute("data-id");
+              // console.log(id);
+              if (id) {
+                window.location.assign(`https://5oyimtihon.vercel.app/main.html?id=${id}`);
+              }
+              })
+            });
               }
             });
             })
@@ -30,7 +42,7 @@ const select = document.querySelector("#Popularity")
               const id = this.getAttribute("data-id");
               // console.log(id);
               if (id) {
-                window.location.assign(`http://127.0.0.1:5501/main.html?id=${id}`);
+                window.location.assign(`https://5oyimtihon.vercel.app/main.html?id=${id}`);
               }
               })
             });
